@@ -1,0 +1,1 @@
+Creazione web-app responsive pagina spotify. width (480,768,1500) + ( bonus: 1900)

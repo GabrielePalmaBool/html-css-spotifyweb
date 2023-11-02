@@ -12,7 +12,12 @@
 
 
 
-/*  */
+/* COntainers */
+
+.Footer_bar {
+    background-color: gray;
+    height: 100px;
+}
 
 .container_main {
     height: calc(100vh - 100px);
@@ -21,9 +26,10 @@
 }
 
 .container_main .container_vert {
-    width: 250px;
+    width: 350px;
     height: 100%;
-    background-color: red;
+    background-color: black;
+    
 }
 
 .container_main .container_cent {
@@ -41,6 +47,7 @@
     background-color: rgb(7, 255, 7);
     display: flex;
     padding: 100px;
+    flex-wrap: wrap;
 }
 
 
@@ -49,4 +56,102 @@
     width: 300px;
     background-color: aqua; 
     margin: 10px;
+}
+
+/* Container Verticale */
+
+.container_vert ul{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.container_vert h3 {
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.container_vert .Logo2 {
+    display: none;
+}
+
+.container_vert img {
+    width: 150px;
+}
+
+.container_vert h5, .fa-solid, .fa-regular{
+    display: inline-block;
+    margin: 0px 15px 0px 0px;
+    font-size: 20px;
+}
+
+.container_vert .fa-square-plus {
+    font-size: 35px;
+}
+
+.container_vert .profile, .fa-circle-user {
+    color: white;
+    font-weight: bold;
+}
+
+.container_vert a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(113, 113, 113);
+}
+
+.container_vert a:hover {
+    color: white;
+}
+
+.container_vert .down {
+    margin-top: 180px;
+}
+
+
+ /************************************************
+    PARTE RESPONSIVE
+ ************************************************/
+
+
+ /* Versione mobile */
+ @media screen and (max-width: 480px) {
+
+    .container_main .container_vert {
+        max-width: 50px;
+    }
+
+    .container_vert .Logo2 {
+        display: inline-block;
+    }
+
+    .container_vert .Logo2 {
+        width: 35px;
+        margin: 0px 5px 0px -5px;
+    }
+
+    .container_vert ul{
+        padding: 5px;
+    }
+
+    .container_vert h5, h3, .fa-square-plus, hr, .Logo1{
+        display: none;
+    }
+
+     .container_vert li {
+        margin: 10px 0px 10px 10px;
+    } 
+
+    .container_vert .down {
+        margin-top: 375px;
+    }
+}
+
+ /* Versione Desktop */
+ @media screen and (min-width: 481px) {
+
+    .container_main .container_vert {
+        min-width: 350px;
+    }
+
 }

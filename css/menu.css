@@ -12,10 +12,10 @@
 
 
 
-/* COntainers */
+/* Containers */
 
 .Footer_bar {
-    background-color: gray;
+    background-color: rgb(40, 40, 40);
     height: 100px;
 }
 
@@ -58,13 +58,15 @@
     margin: 10px;
 }
 
-/* Container Verticale */
+/* ----------------------Container Verticale----------------------------- */
 
 .container_vert ul{
     list-style-type: none;
     padding: 20px;
 }
-
+.container_vert li {
+    margin: 10px 0px 10px 0px;
+}
 .container_vert h3 {
     color: white;
     font-size: 25px;
@@ -77,6 +79,7 @@
 
 .container_vert img {
     width: 150px;
+    margin: 0px 0px 0px -15px;
 }
 
 .container_vert h5, .fa-solid, .fa-regular{
@@ -108,6 +111,9 @@
     margin-top: 180px;
 }
 
+/* ----------------------Container orizzontale----------------------------- */
+
+
 
  /************************************************
     PARTE RESPONSIVE
@@ -127,23 +133,19 @@
 
     .container_vert .Logo2 {
         width: 35px;
-        margin: 0px 5px 0px -5px;
+        margin: 0px 5px 0px -10px;
     }
 
     .container_vert ul{
-        padding: 5px;
+        padding: 15px;
     }
 
     .container_vert h5, h3, .fa-square-plus, hr, .Logo1{
         display: none;
     }
 
-     .container_vert li {
-        margin: 10px 0px 10px 10px;
-    } 
-
     .container_vert .down {
-        margin-top: 375px;
+        margin-top: 350px;
     }
 }
 

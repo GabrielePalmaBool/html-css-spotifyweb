@@ -213,62 +213,73 @@ ul{
 
 /* Container orizzontale */
 
+.Footer_bar .fa-solid, .fa-regular {
+    font-size: 15px;
+    color: white;
+}
     
-    .Lato_sin > .fa-regular {
-        display: block;
-    }
-
-    .Lato_sin .Icon {
-        margin: 10px 0px 0px 0px;
-    }
-
+  
 /* Sinistro */
-    .Lato_sin {
+    .Footer_bar .Lato_sin {
         flex-basis: 40%;
         padding: 10px;
     }
-
-    .Lato_sin > h5,h7{
-        font-size: 10px;
+   
+    .Lato_sin li {
+        width: 30%;
     }
+
+   .Footer_bar .Lato_sin h5,h7{
+        display: inline-block;
+        font-size: 10px;
+        width: 60px;
+    }
+
+    .Lato_sin .fa-regular {
+        display: block;
+      
+    }
+
+
 /* Centro */
-    .Centro {
+    .Footer_bar .Centro {
         flex-basis: 45%;
         padding: 10px;
-    }
-
-    .Centro li {
-        width: 100%;
-    }
-
-    .Centro > .fa-solid, .fa-regular {
-        color: white;
-        font-size: 15px;
-        
-    }
-
-    .Centro > .fa-regular {
-        margin: 0px 5px 0px -5px;
     }
 
     .Centro  #vol{
         display: inline-block;
         width: 100px;
+        margin-top: 15px;
     }
     .Centro span {
         color: red;
         font-size: 15px;
     }
 
+    .Footer_bar .Centro .fa-regular, .fa-solid {
+        margin-left: -2px;
+    }
+
 /* Destro */
-     .Lato_des {
-        flex-basis: 10%;
+    .Footer_bar .Lato_des {
+        flex-basis: 40%;
         padding: 10px;
     }
 
-    .Lato_des > .fa-solid {
-        color: white;
-        margin-left: 10px;
+    .Footer_bar .Lato_des  li {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .Footer_bar .Lato_des .fa-solid{
+        font-size: 15px;
+        margin-left: -15px;
+    }
+        
+    .Lato_des  #vol{
+        width: 70px;
+        margin-left: -5px;
     }
     
 }

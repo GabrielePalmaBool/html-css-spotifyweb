@@ -112,10 +112,6 @@ ul{
     color: white;
 }
 
-.container_vert .down {
-    margin-top: 140px;
-}
-
 /* ----------------------Container orizzontale----------------------------- */
 
 .Footer_bar li {
@@ -136,7 +132,7 @@ ul{
 
 .Footer_bar .Lato_sin h5,h7{
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 5px;
 }
 
@@ -181,7 +177,7 @@ ul{
 
 
  /* Versione mobile */
- @media screen and (max-width: 480px) {
+ @media screen and (max-width: 767px) {
 
 
 /* Container verticale */
@@ -208,7 +204,7 @@ ul{
     }
 
     .container_vert .down {
-        margin-top: 350px;
+        margin-top: 430px;
     }
 
 /* Container orizzontale */
@@ -250,11 +246,11 @@ ul{
     .Centro  #vol{
         display: inline-block;
         width: 100px;
-        margin-top: 15px;
     }
+    
     .Centro span {
-        color: red;
-        font-size: 15px;
+        color: white;
+        font-size: 10px;
     }
 
     .Footer_bar .Centro .fa-regular, .fa-solid {
@@ -296,26 +292,39 @@ ul{
     }
 
 
-
-
  /* Container orizzontale */
 
+ .Footer_bar .fa-solid, .fa-regular {
+    font-size: 20px;
+    color: white;
+}
+
 /* Sinistro */
- .Lato_sin {
+.Footer_bar .Lato_sin {
     flex-basis: 40%;
-    padding: 20px;
+    padding: 10px;
  }
 
 /* Centro */
-    .Centro {
-        flex-basis: 60%;
-        padding: 20px;
+.Footer_bar .Centro {
+        flex-basis: 40%;
+        padding-left: 50px;
     }
 
     .Centro li {
         width: 100%;
         text-align: center;
     }
+
+    .Centro span {
+        color: white;
+    }
+/* Destro */
+.Footer_bar .Lato_des {
+    flex-basis: 20%;
+    padding-left: 10px;
+}
+
 
 }
 
@@ -326,6 +335,32 @@ ul{
     .container_vert .down {
         margin-top: 140px;
     }
+
+/* Container orizzontale */
+
+/* Sinistro */
+
+.Footer_bar .Lato_sin {
+    flex-basis: 25%;
+    padding: 10px;
+ }
+
+.Footer_bar .Lato_sin .Select_Img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+/* Centro */
+.Footer_bar .Centro {
+    flex-basis: 50%;
+    padding-right: 150px;
+}
+
+/* Destro */
+.Footer_bar .Lato_des {
+    flex-basis: 25%;
+    padding-left: 10px;
+}
 
 
 }

@@ -131,10 +131,9 @@ ul{
 
 .container_block .block img {
     width: 100%;
-    
 }
 
-.container_block .block h3, h7{
+.container_block .block h3{
     font-size: 17px;
 }
 
@@ -156,7 +155,6 @@ ul{
     color: white;
     top: 25%;
     left: 30%;
-    
 }
 
 .container_block .block .circle:hover img{
@@ -240,26 +238,57 @@ ul{
         max-width: 50px;
     }
 
-    .container_vert .Logo2 {
+    .container_main .container_vert .Logo2 {
         display: inline-block;
     }
 
-    .container_vert .Logo2 {
+    .container_main .container_vert .Logo2 {
         width: 35px;
         margin: 0px 0px 0px -7px;
     }
 
-    .container_vert ul{
+    .container_main .container_vert ul{
         padding: 15px;
     }
 
-    .container_vert h5, h3, .fa-square-plus, hr, .Logo1{
+    .container_vert  h3{
         display: none;
     }
 
-    .container_vert .down {
+    .container_vert  ul h5, .fa-square-plus, hr, .Logo1{
+        display: none;
+    }
+
+    .container_main .container_vert .down {
         margin-top: 430px;
     }
+
+/* Container centrale */
+
+.container_main .block {
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.container_cent  h3{
+    font-size: 25px;
+}
+
+.container_cent  h7{
+    width: 200px;
+}
+
+.container_block .block .fa-circle-play {
+    display: none;
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    top: 25%;
+    left: 32%;
+}
 
 /* Container orizzontale */
 
@@ -345,6 +374,29 @@ ul{
         margin-top: 140px;
     } 
 
+/* Container centrale */
+
+.container_main .block {
+    height: 300px;
+    width: calc((100% / 2) - 20px);
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.container_block .block .fa-circle-play {
+    display: none;
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    top: 17%;
+    left: 35%;
+}
+
+.container_block .block img {
+    width: 90%;
+}
+
  /* Container orizzontale */
 
  .Footer_bar .fa-solid, .fa-regular {
@@ -385,8 +437,33 @@ ul{
  @media screen and (min-width: 1500px) {
 
 
+/* Container Verticale */
+
     .container_vert .down {
         margin-top: 140px;
+    }
+
+/* Container centrale */
+
+    .container_main .block {
+        height: 300px;
+        width: calc((100% / 4) - 20px);
+        margin: 10px;
+        text-align: center;
+        position: relative;
+    }
+
+    .container_block .block .fa-circle-play {
+        display: none;
+        position: absolute;
+        font-size: 80px;
+        color: white;
+        top: 25%;
+        left: 30%;
+    }
+    
+    .container_block .block img {
+        width: 90%;
     }
 
 /* Container orizzontale */
@@ -422,7 +499,24 @@ ul{
  /* Versione Desktop */
  @media screen and (min-width: 1900px) {
 
+  
+
     .container_vert .down {
         margin-top: 260px;
     }
+
+    /* Container centrale */
+
+      .container_main .block {
+        height: 300px;
+        width: calc((100% / 6) - 20px);
+        margin: 10px;
+        text-align: center;
+        position: relative;
+    }
+
+    .container_block .block img {
+        width: 100%;
+    }
+
  }

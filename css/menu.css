@@ -25,7 +25,6 @@ ul{
 
 .container_main {
     height: calc(100vh - 100px);
-    background-color: blue;
     display: flex;
 }
 
@@ -33,18 +32,20 @@ ul{
     width: 230px;
     height: 100%;
     background-color: black;
-    
 }
 
 .container_main .container_cent {
     flex-grow: 1;
-    background-color: green;
     overflow-y: auto;
 }
 
 .container_cent .Top_bar {
     height: 80px;
-    background-color: yellow;
+    width: 100vw;
+    background-color: rgb(8, 11, 18);
+    opacity: 0.9;
+    position: fixed;
+    z-index: 1;
 }
 
 .container_main .container_block{
@@ -52,16 +53,6 @@ ul{
     display: flex;
     padding: 100px;
     flex-wrap: wrap;
-}
-
-
-.container_main .block {
-    height: 300px;
-    width: calc((100% / 6) - 20px);
-    /* background-color: aqua;   */
-    margin: 10px;
-    text-align: center;
-    position: relative;
 }
 
 /* ----------------------Container Verticale----------------------------- */
@@ -113,6 +104,24 @@ ul{
     color: white;
 }
 
+
+/* ----------------------Container top----------------------------- */
+.Top_bar a{
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+}
+
+.Top_bar a:hover {
+    color: gray;
+}
+
 /* ----------------------Container Centrale----------------------------- */
 
 .container_block .Title {
@@ -148,14 +157,6 @@ ul{
     object-fit: contain;
 }
 
-.container_block .block .fa-circle-play {
-    display: none;
-    position: absolute;
-    font-size: 80px;
-    color: white;
-    top: 25%;
-    left: 30%;
-}
 
 .container_block .block .circle:hover img{
     opacity: 0.5;
@@ -165,12 +166,6 @@ ul{
     display: inline-block;
 }
 
-
-/* ----------------------Container orizzontale----------------------------- */
-
-.Footer_bar li {
-    display: inline-block;
-}
 
 
 /*-------------------Lato sinistro--------------------- */
@@ -184,7 +179,7 @@ ul{
     max-height: 50px;
 }
 
-.Footer_bar .Lato_sin h5,h7{
+.Footer_bar h5,h7, span{
     color: white;
 }
 
@@ -193,34 +188,9 @@ ul{
 }
 
 .Footer_bar .Lato_sin .fa-regular {
-    color: rgb(113, 113, 113);
     margin: 0px 0px 0px 0px;
 }
 
-.Footer_bar .Lato_sin  a{
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.Footer_bar .Lato_sin a:hover {
-    color: white;
-}
-/*-------------------centro--------------------- */
-
-.Footer_bar .Centro {
-    flex-basis: 60%;
-    padding: 20px;
-}
-
-.Footer_bar .Centro .fa-solid, .fa-regular {
-    color: white;
-}
-/*-------------------lato destro--------------------- */
-
-.Footer_bar .Lato_des {
-    flex-basis: 20%;
-    padding: 20px;
-}
 
 
  /************************************************
@@ -235,7 +205,7 @@ ul{
 /* Container verticale */
 
     .container_main .container_vert {
-        max-width: 50px;
+        min-width: 50px;
     }
 
     .container_main .container_vert .Logo2 {
@@ -262,6 +232,14 @@ ul{
     .container_main .container_vert .down {
         margin-top: 430px;
     }
+
+
+/* Container top */
+
+.container_cent .Top_bar {
+    padding-left: 35%;
+    padding-top: 5%;
+}
 
 /* Container centrale */
 
@@ -294,21 +272,21 @@ ul{
 
 .Footer_bar .fa-solid, .fa-regular {
     font-size: 15px;
-    color: white;
 }
     
   
 /* Sinistro */
-    .Footer_bar .Lato_sin {
+     .Lato_sin {
         flex-basis: 40%;
         padding: 10px;
     }
    
     .Lato_sin li {
         width: 30%;
+        display: inline-block;
     }
 
-   .Footer_bar .Lato_sin h5,h7{
+    .Lato_sin h5,h7{
         display: inline-block;
         font-size: 10px;
         width: 60px;
@@ -316,42 +294,57 @@ ul{
 
     .Lato_sin .fa-regular {
         display: block;
-      
+    }
+
+    .Lato_sin  a{
+        text-decoration: none;
+        cursor: pointer;
+        color: rgb(113, 113, 113);
+    }
+    
+    .Lato_sin a:hover {
+        color: white;
     }
 
 
 /* Centro */
-    .Footer_bar .Centro {
+    .Centro {
         flex-basis: 45%;
         padding: 10px;
+    }
+    
+    .Centro li {
+        width: 170px;
+        text-align: center;
     }
 
     .Centro  #vol{
         display: inline-block;
         width: 100px;
-    }
-    
-    .Centro span {
-        color: white;
         font-size: 10px;
     }
 
-    .Footer_bar .Centro .fa-regular, .fa-solid {
-        margin-left: -2px;
+    .Centro span{
+        font-size: 10px;
+    }
+    
+    .Centro .fa-solid, .fa-circle-play, span {
+        color: white;
     }
 
+    
 /* Destro */
-    .Footer_bar .Lato_des {
+    .Lato_des {
         flex-basis: 40%;
         padding: 10px;
     }
 
-    .Footer_bar .Lato_des  li {
+    .Lato_des  li {
         width: 100%;
         margin-top: 20px;
     }
 
-    .Footer_bar .Lato_des .fa-solid{
+    .Lato_des .fa-solid{
         font-size: 15px;
         margin-left: -15px;
     }
@@ -359,6 +352,10 @@ ul{
     .Lato_des  #vol{
         width: 70px;
         margin-left: -5px;
+    }
+
+    .Lato_des .fa-solid{
+        color: white;
     }
     
 }
@@ -373,6 +370,13 @@ ul{
     .container_vert .down {
         margin-top: 140px;
     } 
+
+/* Container top */
+
+.container_cent .Top_bar {
+    padding-left: 35%;
+    padding-top: 3%;
+}
 
 /* Container centrale */
 
@@ -397,23 +401,36 @@ ul{
     width: 90%;
 }
 
- /* Container orizzontale */
+/* Container orizzontale */
 
  .Footer_bar .fa-solid, .fa-regular {
     font-size: 20px;
-    color: white;
-}
+    }
+
+    .Footer_bar li {
+        display: inline-block;
+    }
 
 /* Sinistro */
 .Footer_bar .Lato_sin {
     flex-basis: 40%;
     padding: 10px;
  }
+ 
+ .Lato_sin  a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(113, 113, 113);
+}
+
+.Footer_bar .Lato_sin a:hover {
+    color: white;
+}
 
 /* Centro */
 .Footer_bar .Centro {
         flex-basis: 40%;
-        padding-left: 50px;
+        padding: 20px 100px 20px 0px;
     }
 
     .Centro li {
@@ -421,13 +438,19 @@ ul{
         text-align: center;
     }
 
-    .Centro span {
+    .Centro .fa-solid, .fa-circle-play {
         color: white;
-    }
+    } 
+    
+
 /* Destro */
 .Footer_bar .Lato_des {
     flex-basis: 20%;
-    padding-left: 10px;
+    padding: 20px 0px 20px 20px;
+}
+
+.Lato_des .fa-solid {
+    color: white;
 }
 
 
@@ -443,14 +466,19 @@ ul{
         margin-top: 140px;
     }
 
+
+/* Container top */
+
+.container_cent .Top_bar {
+    padding-left: 65%;
+    padding-top: 1%;
+}
+
+
 /* Container centrale */
 
     .container_main .block {
-        height: 300px;
         width: calc((100% / 4) - 20px);
-        margin: 10px;
-        text-align: center;
-        position: relative;
     }
 
     .container_block .block .fa-circle-play {
@@ -459,7 +487,11 @@ ul{
         font-size: 80px;
         color: white;
         top: 25%;
-        left: 30%;
+        left: 35%;
+    }
+
+    .container_cent  h3, h7{
+        font-size: 20px;
     }
     
     .container_block .block img {
@@ -489,34 +521,52 @@ ul{
 /* Destro */
 .Footer_bar .Lato_des {
     flex-basis: 25%;
-    padding-left: 10px;
+    padding: 20px 0px 20px 20px;
 }
 
 
 }
 
 
- /* Versione Desktop */
+ /* Versione Desktop(mia) */
  @media screen and (min-width: 1900px) {
 
   
-
     .container_vert .down {
-        margin-top: 260px;
+        margin-top: 270px;
     }
 
+    /* Container top */
+
+    .container_cent .Top_bar {
+        padding-left: 72%;
+    }
+    
     /* Container centrale */
 
       .container_main .block {
-        height: 300px;
         width: calc((100% / 6) - 20px);
-        margin: 10px;
-        text-align: center;
-        position: relative;
     }
 
     .container_block .block img {
         width: 100%;
+    }
+
+    .container_block .block .fa-circle-play {
+        display: none;
+        position: absolute;
+        font-size: 70px;
+        color: white;
+        top: 25%;
+        left: 35%;
+    }
+
+
+
+/* Container orizzontale */
+    .Footer_bar .Lato_des {
+        flex-basis: 25%;
+        padding: 20px 0px 20px 150px;
     }
 
  }

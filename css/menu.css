@@ -61,6 +61,7 @@ ul{
     list-style-type: none;
     padding: 20px;
 }
+
 .container_vert li {
     margin: 10px 0px 10px 0px;
 }
@@ -69,32 +70,6 @@ ul{
     padding-bottom: 20px;
     height: 180px;
     overflow-y: auto;
-    
-}
-
-.container_vert h3 {
-    color: white;
-    font-size: 25px;
-    padding: 20px;
-}
-
-.container_vert .Logo2 {
-    display: none;
-}
-
-.container_vert img {
-    width: 150px;
-    margin: 0px 0px 0px -15px;
-}
-
-.container_vert h5, .fa-solid, .fa-regular{
-    display: inline-block;
-    margin: 0px 15px 0px 0px;
-    font-size: 20px;
-}
-
-.container_vert .fa-square-plus {
-    font-size: 35px;
 }
 
 .container_vert .profile, .fa-circle-user {
@@ -373,6 +348,31 @@ ul{
 
 /* Container verticale */
 
+    .container_vert h3 {
+        color: white;
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    .container_vert h5, .fa-solid, .fa-regular{
+        display: inline-block;
+        margin: 0px 15px 0px 0px;
+        font-size: 20px;
+    }
+    
+    .container_vert .fa-square-plus {
+        font-size: 35px;
+    }
+
+    .container_vert img {
+        width: 150px;
+        margin: 0px 0px 0px -15px;
+    }
+
+    .container_vert .Logo2 {
+        display: none;
+    }
+
     .container_main .container_vert {
         min-width: 230px;
     }
@@ -389,6 +389,27 @@ ul{
 }
 
 /* Container centrale */
+
+.container_main .menu {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container_main .menu a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(113, 113, 113);
+    margin:10px 0px 10px 0px;
+    width: calc(100% / 3);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container_main .menu a:hover {
+    color: white;
+}
 
 .container_main .block {
     height: 300px;
@@ -487,6 +508,18 @@ ul{
 
 /* Container centrale */
 
+    .container_main .menu {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    .container_main .menu a{
+        margin:10px 0px 10px 0px;
+        width: calc((100% / 5) - 30px);
+    }
+
     .container_main .block {
         width: calc((100% / 4) - 20px);
     }
@@ -557,6 +590,15 @@ ul{
       .container_main .block {
         width: calc((100% / 6) - 20px);
     }
+
+    .container_main .menu {
+        display: block;
+    }
+
+    .container_main .menu a{
+        margin: 0px 20px 0px 20px;
+    }
+
 
     .container_block .block img {
         width: 100%;

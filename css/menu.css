@@ -554,10 +554,19 @@ ul{
  /* Versione tablet-desktop */
  @media screen and (min-width: 1100px) {
 
-
-
+    
+    /* Container centrale */
     .container_block .block img {
         width: 60%;
+    }
+
+    .container_block .block .fa-circle-play {
+        display: none;
+        position: absolute;
+        font-size: 60px;
+        color: white;
+        top: 20%;
+        left: 40%;
     }
 
     /* Container footer */
@@ -583,6 +592,8 @@ ul{
         overflow: hidden;
         border-radius: 16px;
       }
+
+    
 
     
  }

@@ -69,9 +69,8 @@ ul{
     padding-bottom: 20px;
     height: 180px;
     overflow-y: auto;
+    
 }
-
-
 
 .container_vert h3 {
     color: white;
@@ -239,7 +238,7 @@ ul{
     }
 
     .container_main .container_vert .down {
-        margin-top: 430px;
+        margin-top: 240px;
     }
 
 
@@ -404,7 +403,7 @@ ul{
     position: absolute;
     font-size: 50px;
     color: white;
-    top: 17%;
+    top: 15%;
     left: 35%;
 }
 
@@ -563,15 +562,6 @@ ul{
         width: 100%;
     }
 
-    .container_block .block .fa-circle-play {
-        display: none;
-        position: absolute;
-        font-size: 70px;
-        color: white;
-        top: 25%;
-        left: 35%;
-    }
-
 
 
 /* Container orizzontale */
@@ -587,9 +577,9 @@ ul{
 
 
 
-
-
-
+ /************************************************************************
+                     PARTE RESPONSIVE CONTENUTO VERTICALE
+ *************************************************************************/
 
  /* Overflow  verticale*/
  @media screen and (max-height: 750px) {
@@ -603,6 +593,15 @@ ul{
         margin-top: 40px;
     }
 
+
+ }
+
+ @media screen and (max-height: 570px) {
+
+    /* Barra verticale */
+    .container_vert .Scroll_list {
+        overflow: hidden;
+    }
 
  }
  

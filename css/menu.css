@@ -244,12 +244,24 @@ ul{
 
 /* Container centrale */
 
+.container_main .container_block{
+    padding: 20px;
+}
+
+
+.container_main .menu {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 100px;
+}
+
 .container_main .menu a{
     text-decoration: none;
     cursor: pointer;
     color: rgb(113, 113, 113);
     margin:10px 0px 10px 0px;
-    width: calc(100% / 6);
+    width: calc(100% / 4);
     font-size: 12px;
     font-weight: bold;
 }
@@ -261,7 +273,7 @@ ul{
 .container_main .block {
     height: 300px;
     width: 300px;
-    margin: 10px;
+    margin: 0px 0px 100px 20px;
     text-align: center;
     position: relative;
 }

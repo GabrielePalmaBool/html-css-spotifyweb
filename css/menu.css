@@ -150,6 +150,29 @@ ul{
 }
 
 
+/* Footer bar */
+.range::-webkit-slider-runnable-track {
+    height: 5px;
+    background: rgb(90, 90, 90);
+    border-radius: 16px;
+  }
+  
+  .range1::-moz-range-track {
+    height: 5px;
+    background: rgb(90, 90, 90);
+    border-radius: 16px;
+  }
+  
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    height: 5px;
+    width: 5px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 50%;
+    box-shadow: -407px 0 0 400px rgb(193, 193, 193);
+  }
+  
 
 /*-------------------Lato sinistro--------------------- */
 
@@ -170,11 +193,6 @@ ul{
     margin: 10px 0px 0px 0px;
 }
 
-.Footer_bar .Lato_sin .fa-regular {
-    margin: 0px 0px 0px 0px;
-}
-
-
 
  /************************************************
     PARTE RESPONSIVE
@@ -182,7 +200,7 @@ ul{
 
 
  /* Versione mobile */
- @media screen and (max-width: 767px) {
+ @media screen and (max-width: 768px) {
 
 
 /* Container verticale */
@@ -226,6 +244,20 @@ ul{
 
 /* Container centrale */
 
+.container_main .menu a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(113, 113, 113);
+    margin:10px 0px 10px 0px;
+    width: calc(100% / 6);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container_main .menu a:hover {
+    color: white;
+}
+
 .container_main .block {
     height: 300px;
     width: 300px;
@@ -253,7 +285,7 @@ ul{
 
 /* Container orizzontale */
 
-.Footer_bar .fa-solid, .fa-regular {
+.Footer_bar .fa-solid {
     font-size: 15px;
 }
     
@@ -301,11 +333,15 @@ ul{
         text-align: center;
     }
 
-    .Centro  #vol{
-        display: inline-block;
-        width: 100px;
-        font-size: 10px;
-    }
+    .Centro .centro{
+        -webkit-appearance: none;
+        appearance: none; 
+        width: 130px;
+        cursor: pointer;
+        outline: none;
+        overflow: hidden;
+        border-radius: 16px;
+      }
 
     .Centro span{
         font-size: 10px;
@@ -315,6 +351,9 @@ ul{
         color: white;
     }
 
+    .Centro .fa-solid {
+        margin: 0px 10px 0px 10px;
+    }
     
 /* Destro */
     .Lato_des {
@@ -324,19 +363,23 @@ ul{
 
     .Lato_des  li {
         width: 100%;
-        margin-top: 20px;
     }
 
     .Lato_des .fa-solid{
-        font-size: 15px;
-        margin-left: -15px;
-    }
-        
-    .Lato_des  #vol{
-        width: 70px;
-        margin-left: -5px;
+        margin-left: 5px;
     }
 
+    /* input range  */
+    .Lato_des .destro{
+        -webkit-appearance: none;
+        appearance: none; 
+        width: 50px;
+        cursor: pointer;
+        outline: none;
+        overflow: hidden;
+        border-radius: 16px;
+      }
+      
     .Lato_des .fa-solid{
         color: white;
     }
@@ -461,7 +504,7 @@ ul{
 /* Centro */
 .Footer_bar .Centro {
         flex-basis: 40%;
-        padding: 20px 100px 20px 0px;
+        padding: 20px 0px 20px 0px;
     }
 
     .Centro li {
@@ -472,20 +515,77 @@ ul{
     .Centro .fa-solid, .fa-circle-play {
         color: white;
     } 
+
+    .Centro .centro{
+        -webkit-appearance: none;
+        appearance: none; 
+        width: 130px;
+        cursor: pointer;
+        outline: none;
+        overflow: hidden;
+        border-radius: 16px;
+      }
     
 
 /* Destro */
-.Footer_bar .Lato_des {
-    flex-basis: 20%;
-    padding: 20px 0px 20px 20px;
+    .Footer_bar .Lato_des {
+        flex-basis: 20%;
+        padding: 20px 0px 20px 20px;
+    }
+
+    .Lato_des .fa-solid {
+        color: white;
+    }
+
+    .Lato_des .destro{
+        -webkit-appearance: none;
+        appearance: none; 
+        width: 130px;
+        cursor: pointer;
+        outline: none;
+        overflow: hidden;
+        border-radius: 16px;
+      }
+
+
 }
 
-.Lato_des .fa-solid {
-    color: white;
-}
+
+ /* Versione tablet-desktop */
+ @media screen and (min-width: 1100px) {
 
 
-}
+
+    .container_block .block img {
+        width: 60%;
+    }
+
+    /* Container footer */
+
+    .Footer_bar .Lato_sin {
+        flex-basis: 30%;
+    }
+
+    .Footer_bar .Centro{
+        flex-basis: 45%;
+    }
+
+    .Footer_bar .Lato_des{
+        flex-basis: 25%;
+    }
+
+    .Centro .centro{
+        -webkit-appearance: none;
+        appearance: none; 
+        width: 330px;
+        cursor: pointer;
+        outline: none;
+        overflow: hidden;
+        border-radius: 16px;
+      }
+
+    
+ }
 
  /* Versione Desktop */
  @media screen and (min-width: 1500px) {

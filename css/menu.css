@@ -252,7 +252,9 @@ ul{
 .container_main .menu {
     width: 100%;
     text-align: center;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 100px;
 }
 
@@ -264,6 +266,10 @@ ul{
     width: calc(100% / 4);
     font-size: 12px;
     font-weight: bold;
+}
+
+.container_main .menu .generi {
+    width: calc((100% / 4) + px);
 }
 
 .container_main .menu a:hover {
